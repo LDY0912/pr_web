@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원등록</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- div태그는 div태그안에 또다른 태그나 값을 넣기 전까지는 영역과 공간을 가지지 않는다 -->
+    <div id = "wrapper" class = "wrapper">
+        <!-- form태그는 웹브라우저(프론트엔드)에서 웹서버(백엔드)로 데이터를 넘기고자 할때 input태그와 같이 작성해주는 태그 -->
+        <form id="registrationForm" class="registrationForm">
+            <h2>회원등록</h2>
+            <div class="inputGroup">
+                <label for="nickname">사용자이름</label>
+                <input type="text" id = "nickname" class="nicknameInput">
+                <span class="helperText">알림</span>
+                <!-- 글자 표현 -->
+            </div>
+            <div class="inputGroup">
+                <label for="userEmail">이메일 주소</label>
+                <input type="email" id="email" class="emailInput">
+                <span class="helperText">알림</span>
+            </div>
+            <div class="inputGroup">
+                <label for="userPassword">비밀번호</label>
+                <input type="password" id="userPassword" class="passwordInput">
+                <span class="helperText">알림</span>
+            </div>
+            <div class="inputGroup">
+                <label for="confirmPassword">비밀번호 확인</label>
+                <input type="password" id="confirmPassword" class="confirmPasswordInput">
+                <span class="helperText">알림</span>
+            </div>
+            <div class="inputGroup">
+                <label for="phone">휴대폰번호</label>
+                <input type="tel" id="phone" class="phoneInput">
+                <span class="helperText">예: 010-1234-5678</span>
+            </div>
+            <button type="submit">등록완료</button>
+        </form>
+    </div>
+</body>
+</html>
